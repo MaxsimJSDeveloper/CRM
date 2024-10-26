@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import { Promotion } from '@/lib/api';
+import { Promotion as PromotionType } from '@/lib/api';
 
 export interface PromotionProps {
-  promotion: Promotion;
+  promotion: PromotionType;
 }
 
 export default function Promotion({ promotion }: PromotionProps) {
   return (
-    <div className="rounded overflow-hidden	bg-gray-100">
+    <div className="rounded overflow-hidden bg-gray-100">
       <div className="relative w-full h-40 bg-gray-300">
         {promotion.avatar && (
           <Image fill src={promotion.avatar} alt="promotion avatar" />

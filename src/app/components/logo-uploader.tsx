@@ -34,13 +34,14 @@ export default function LogoUploader({
           square && 'w-full'
         )}
       >
-        <Image
-          className="mb-1"
-          width={48}
-          height={48}
-          src="/icons/upload.svg"
-          alt="upload"
-        />
+          <Image
+            className="mb-1"
+            width={48}
+            height={48}
+            src="/icons/upload.svg"
+            alt="upload"
+          />
+        
         {placeholder && (
           <p className="text-base text-gray-500">{placeholder}</p>
         )}

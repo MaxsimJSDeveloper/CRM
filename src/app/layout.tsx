@@ -12,6 +12,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="description"
+          content="CRM - effective customer relationship management"
+        />
+        <meta name="keywords" content="CRM, management, customers, business" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Maksym" />
+
+        <link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
+        <title>CRM</title>
+      </head>
       <body className={font.className}>
         <Providers>{children}</Providers>
       </body>
